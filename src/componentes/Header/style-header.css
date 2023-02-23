@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+:root {
+  --fundo: #2603c0;
+  --letra: #000;
+  --letra_foco: #2603c0;
+}
+
+.Aticarcor {
+  background-color: var(--fundo);
+}
+.Aticarcor a:hover {
+  color: aliceblue;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  transition: 1s;
+}
+header img {
+  width: 10%;
+}
+header nav a {
+  margin: 0 2rem;
+  color: var(--letra);
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: "Anton", sans-serif;
+}
+header nav a:hover {
+  color: var(--letra_foco);
+}
+header .nav-btn {
+  padding: 5px;
+  cursor: point;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: azure;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  header img {
+    width: 20%;
+  }
+  header .nav-btn {
+    color: #000;
+    visibility: visible;
+    opacity: 1;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--fundo);
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  .resposive_nav {
+    transform: none;
+  }
+}/*# sourceMappingURL=style-header.css.map */

@@ -1,0 +1,304 @@
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+#eu{
+    width: 100%;
+    display: flex;
+    section{
+        height: 40rem;
+        width: 70%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+
+        h3{
+            font-size: 60px;
+            color: #2603c0;
+        }
+        h1{
+            font-size: 50px;
+        }
+
+        p{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 25px;
+        }
+
+        a{
+            text-decoration: none;
+            background-color: #2603c0;
+            color: #fff;
+            padding: 20px;
+            margin-right: 49rem;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 20px;
+            transition: 0.5s;
+            &:hover{
+                border: 1px solid #2603c0;
+                background-color: #fff;
+                color:#2603c0
+            }
+        }
+    }
+
+    img{
+        width: 40%;
+        height: 40rem;
+        border-radius: 12px;
+        border-radius: 50% 100%;
+        margin-right: 50px;
+
+        transition: 0.5s;
+        &:hover{
+            border-left: 10px solid #2603c0;
+            border-right: 10px solid #2603c0;
+        }
+    }
+    
+}
+
+#servico{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+        text-align: center;
+        color:#2603c0
+    }
+    .container-servico{
+        display: flex;
+        justify-content: center;
+
+        .box{
+            width: 75%;
+            margin: 0 3rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            background-color: #0000004c;
+            border-radius: 12px;
+            transition: 0.5s;
+        .titulo{
+            margin: 12px;
+            font-size: 30px;
+            color: #2603c0;
+        }
+        img{
+            width: 20%;
+        }
+        .conteudo{
+            font-size: 20px;
+            margin: 15px;
+            text-align: center;
+        }
+        &:hover{
+            transform: scale(1.01) translateY(-5px);
+            border-top: 5px solid #2603c0;
+
+        }
+        }
+    }
+}
+
+#ferramentas{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 35px;
+
+    p{
+        font-size: 40px;
+        text-align: center;
+        color:#2603c0;
+    }
+
+    .box-img{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .img{
+            border: 2px solid #2603c0;
+            border-radius: 12px;
+
+            width: 10%;
+            height: 50%;
+
+            margin: 12px 12px;
+            padding: 30px;
+
+            align-items: center;
+
+            transition: 0.5s;
+            img{
+                width: 5rem;
+            }
+        &:hover{
+                transform: scale(1.01) translateY(-5px);
+                border-top: 5px solid #2603c0;
+        
+            }
+        }
+    }
+
+}
+
+
+#contato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+
+    img{
+        width: 50%;
+    }
+
+    form{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        border: 2px solid #2603c0;
+        border-radius: 10% 40%;
+        padding: 80px;
+        text-align: center;
+
+        p{
+            font-size: 30px;
+            color: #2603c0;
+            margin-bottom: 20px;
+        }
+
+        label{
+            font-size: 20px;
+            color: #2603c0;
+        }
+        input, textarea{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+
+            border-radius: 12px;
+            border: none;
+            border-top: 1px solid #2603c0;
+            border-bottom: 1px solid #2603c0;
+
+            outline: 0;
+
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.01) translateY(-5px);
+                border-bottom: 3px solid #2603c0;
+                border-top: 3px solid #2603c0;
+            }
+        }
+        .Enviar{
+            background-color: #2603c0;
+            color: #fff;
+            font-size: 18px;
+
+            transition: 0.6s;
+            &:hover{
+                transform: scale(1.01) translateY(-5px);
+
+                background-color: #fff;
+                color: #2603c0;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #eu{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+        section{
+            text-align: center;
+            align-items: center;
+            margin-top: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 50%;
+            justify-content: flex-start;
+            
+            h3{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+            a{
+                margin-left: 5rem ;
+                margin-right: 5rem ;
+                padding: 20px 50px ;
+            }
+        }
+        img{
+            margin-top: 14px;
+            clip-path: none;
+            width: 80%;
+            height: 50%;
+            margin-right: 0px;
+            
+        }
+        
+    }
+
+    #servico{
+        .container-servico{
+            flex-direction: column;
+            .box{
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    #ferramentas{
+        .box-img{
+            .img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40%;
+            }
+        }
+    
+    }
+        
+    #contato{
+        flex-direction: column;
+        form{
+            width: 80%;
+            padding: 30px;
+            border-radius: 20px;
+        }
+    }
+}
+
+
