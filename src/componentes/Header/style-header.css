@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-:root {
-  --fundo: #2603c0;
-  --letra: #000;
-  --letra_foco: #2603c0;
-}
-
 .Aticarcor {
   background-color: var(--fundo);
 }

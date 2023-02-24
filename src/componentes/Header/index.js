@@ -16,10 +16,10 @@ export default function Header({acao}){
         <header className={acao ? 'Aticarcor' : ''}>
             <img src={logo} alt='brendo gomes'/>
             <nav ref={navRef}>
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Meus Projetos</a>
-                <a href="#">Contato</a>
+                <a href="/">Home</a>
+                <a href="/sobre">Sobre</a>
+                <a href="/meus-projetos">Meus Projetos</a>
+                <a href="#contato">Contato</a>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes/>
                 </button>

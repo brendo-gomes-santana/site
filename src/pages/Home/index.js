@@ -1,7 +1,7 @@
-import img_eu from './eu.jpg';
-import img_front from './front-end.png';
-import img_back from './back-end.png';
-import img_contato from './img_contato.jpg'
+import img_eu from './img/eu.jpg';
+import img_front from './img/front-end.png';
+import img_back from './img/back-end.png';
+import img_contato from './img/img_contato.jpg'
 
 import './style-home.css';
 
@@ -22,7 +22,7 @@ export default function Home(){
     function sendEmail(e){
         e.preventDefault();
 
-        if(nome === '' || email === '' || telefone === '' || mensagem === ''){
+        if(nome === '' || email === '' || mensagem === ''){
             toast.warn('Preenchar todos os campos')
             return;
         }

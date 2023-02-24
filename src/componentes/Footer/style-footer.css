@@ -1,0 +1,21 @@
+footer {
+  margin-top: 2rem;
+  background-color: var(--fundo);
+  padding: 12px;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--letra-branca);
+}
+
+.redes-sociais {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.redes-sociais img {
+  width: 60%;
+}/*# sourceMappingURL=style-footer.css.map */

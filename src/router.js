@@ -1,8 +1,13 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './pages/Home/index';
+import {useEffect, useState} from 'react';
+
 
 import Header from './componentes/Header/index';
-import {useEffect, useState} from 'react';
+
+    import Home from './pages/Home/index';
+
+import Footer from './componentes/Footer/index'
+
 
 function Router(){
     const [ativarcor, setAtivarCor] = useState(false);
@@ -19,10 +24,15 @@ function Router(){
 
     return(
         <BrowserRouter>
+        
             <Header acao={ativarcor}/>
+
             <Routes>
                 <Route path='/' element={ <Home/> }/>
             </Routes>
+
+            <Footer/>
+
         </BrowserRouter>
     );
 }
