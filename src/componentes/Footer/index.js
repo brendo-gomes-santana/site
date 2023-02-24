@@ -8,9 +8,9 @@ export default function Footer(){
     return(
         <footer>
             <div className="redes-sociais">
-                <a href='#'><img src={img_face}/></a>
-                <a href='#'><img src={img_inst}/></a>
-                <a href='#'><img src={img_link}/></a>
+                <a target='blank' href='https://www.facebook.com/profile.php?id=100016522992617'><img src={img_face}/></a>
+                <a target='blank' href='https://www.instagram.com/brem._.s/'><img src={img_inst}/></a>
+                <a target='blank' href='https://www.linkedin.com/in/brendo-gomes-a90210232/'><img src={img_link}/></a>
             </div>
             <p>Desenvolvido por Brendo Gomes Santana</p>
         </footer>

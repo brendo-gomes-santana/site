@@ -1,6 +1,7 @@
 import {FaBars, FaTimes} from 'react-icons/fa'
 import {useRef} from 'react';
 
+import {Link} from 'react-router-dom';
 
 import './style-header.css';
 import logo from './logo.png';
@@ -16,9 +17,9 @@ export default function Header({acao}){
         <header className={acao ? 'Aticarcor' : ''}>
             <img src={logo} alt='brendo gomes'/>
             <nav ref={navRef}>
-                <a href="/">Home</a>
-                <a href="/sobre">Sobre</a>
-                <a href="/meus-projetos">Meus Projetos</a>
+                <Link to='/'>Home</Link>
+                <Link to='/sobre'>Sobre</Link>
+                <a target='_blank' href="https://github.com/brendo-gomes-santana">Meus Projetos</a>
                 <a href="#contato">Contato</a>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes/>

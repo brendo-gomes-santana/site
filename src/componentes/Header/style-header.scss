@@ -3,9 +3,11 @@
 
 .Aticarcor{
     background-color: var(--fundo);
+    color:var(--letra-branca);
     a{
+        color: var(--letra-branca);
         &:hover{
-            color:aliceblue
+            color: var(--letra-foco-h);
         }
     }
 }
@@ -47,15 +49,32 @@ header{
 }
 
 @media only screen and (max-width: 800px){
+    .Aticarcor{
+        background-color: var(--fundo);
+        color:var(--letra-branca);
+        a{
+            color: var(--letra-branca);
+            &:hover{
+                color: var(--letra-foco-h);
+            }
+        }
+        .nav-btn{
+            color: #fff;
+        }
+    }
     header {
         img{
             width: 20%;
         }
         .nav-btn{
-            color: #000;
+            color: #000000;
             visibility: visible;
             opacity: 1;
-    
+        }
+        nav{
+            a{
+                color: var(--letra-branca);
+            }
         }
     }
     
