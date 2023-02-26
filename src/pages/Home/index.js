@@ -1,7 +1,7 @@
 import img_eu from './img/eu.jpg';
 import img_front from './img/front-end.png';
 import img_back from './img/back-end.png';
-import img_contato from './img/img_contato.jpg'
+import img_contato from './img/img_contato.jpg';
 
 import './style-home.css';
 
@@ -12,6 +12,8 @@ import { toast } from 'react-toastify';
 
 import emailjs from '@emailjs/browser';
 
+import { Link } from 'react-router-dom';
+ 
 export default function Home(){
 
     const [nome, setName] = useState('');
@@ -54,7 +56,7 @@ export default function Home(){
                     <h3>Web</h3>
                     <h1>Desenvolvedor</h1>
                     <p>Sou Desenvolvedor focado no desenvolvimento Web. Acredito no poder <br/>da tecnologia de transformar o mundo.</p>
-                    <a href='#'>Mais</a>
+                    <Link to='/sobre'>Mais</Link>
                 </section>
                 <img src={img_eu} alt='brendo Gomes Santana'/>
             </article>
