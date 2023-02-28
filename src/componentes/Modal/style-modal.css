@@ -1,0 +1,44 @@
+#container-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+#box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--fundo-branco);
+  padding: 2%;
+  border-radius: 12px;
+  border: 1px solid var(--fundo);
+}
+
+#base_do-botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+#base_do-botao button {
+  width: 5rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--fundo);
+  color: var(--letra-branca);
+  font-size: 2rem;
+  transition: 0.5s;
+}
+#base_do-botao button:hover {
+  color: var(--fundo);
+  background-color: var(--fundo-branco);
+  border: 1px solid var(--fundo);
+}/*# sourceMappingURL=style-modal.css.map */
