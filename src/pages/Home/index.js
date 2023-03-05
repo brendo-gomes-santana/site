@@ -5,7 +5,7 @@ import img_contato from './img/img_contato.jpg';
 
 import './style-home.css';
 
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 import { IMaskInput } from "react-imask";
 import { toast } from 'react-toastify';
@@ -13,6 +13,9 @@ import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 
 import { Link } from 'react-router-dom';
+//pra funciocanar o efeito, tem que ter os dois.
+import AOS from 'aos';
+import 'aos/dist/aos.css'
  
 export default function Home(){
 
@@ -49,9 +52,14 @@ export default function Home(){
         })
 
     }
+
+    useEffect (() =>{
+        AOS.init({duration:1000});
+    },[])
+
     return(
         <main className='container'>
-            <article id='eu'>
+            <article id='eu' data-aos='fade-up'>
                 <section>
                     <h3>Web</h3>
                     <h1>Desenvolvedor</h1>
@@ -61,7 +69,7 @@ export default function Home(){
                 <img src={img_eu} alt='brendo Gomes Santana'/>
             </article>
 
-            <article id='servico'>
+            <article id='servico' data-aos='fade-up'>
             <h2>Meus Servições</h2>
                 <section className='container-servico'>
                     <div className='box'>
@@ -78,7 +86,7 @@ export default function Home(){
                 </section>
             </article>
 
-            <article id='ferramentas'>
+            <article id='ferramentas' data-aos='fade-up'>
                 <p>Linguagens que utilizo</p>
                 <section className='box-img'>
                     <div className='img'>
@@ -107,13 +115,14 @@ export default function Home(){
                     </div>
                     <div className='img'>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYJJREFUSEvtle0xBEEQhp+LABkQgRIBIkAEiIAMkAERIAJEcGRABGSACKi3aqaq9c3n7ar9wfzZq9vZfqbf7n5nxkRrNhGXf3BU/hHYHqkMT8COj5WT+gY4HAl8Cxy1gs+Bs5HAF4Di/Vi5jCcD7wN35oi93f9lvj0A7lszVjPMRwLvAmrWJqk9eKFGifqrewVYBd7N+y6w/7ilz44BTUOTWqXa2Tq1gGNmvwbeAN4KJ9HMXof3n0H6he2ljHPulayZiWxHMela2rsMWHVMZSyj0BoM1uztGcmew++ch8ck7HcPgDyhS+rcyXWATRfJSmpLlLTLmtQ58CVw4sBXwGn4bzDYdqey3HKweNV5V7JjGGe7S2o/j8pUV1ystQ+2HnpC++LKTkCpqz04BvsIph+NX/vUQAL7tRRYgV5bLKuwZw3QQbuk1uZe2/SArKK1e1ZZRyn1XKkoIItUs6kMemattQb2HHuIOMsvDtZUnV6wDSo1VL9kDWv0IeBa7OL7vwf+BtzMVB/JETIcAAAAAElFTkSuQmCC"/>
+                        <span>CSS</span>
                     </div>
                 </section>
             </article>
 
-            <article id='contato'>
-                <img src={img_contato} alt='contato'/>
-                <form className='form' onSubmit={sendEmail}>
+            <article id='contato' >
+                <img src={img_contato} alt='contato'data-aos='fade-up'/>
+                <form className='form' onSubmit={sendEmail} data-aos='fade-up' >
                 <p>Entre em Contato</p>
                     <label>Nome</label>
                     <input type='text' 

@@ -1,6 +1,75 @@
 .container-sobre {
   padding-top: 6rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container-sobre #um-pouco {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.container-sobre #um-pouco p {
+  font-size: 30px;
+  padding: 20px;
+}
+.container-sobre #um-pouco img {
+  width: 20%;
+  border-radius: 12px;
+}
+.container-sobre #cursos-feitos {
+  background-color: var(--fundo);
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-sobre #cursos-feitos h2 {
+  font-size: 30px;
+  color: var(--letra-branca);
+}
+.container-sobre #cursos-feitos .box-modal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+.container-sobre #cursos-feitos .box-modal .button-modal {
+  height: 50px;
+  width: 15rem;
+  margin: 3px;
+  background-color: var(--letra-branca);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container-sobre #cursos-feitos .box-modal .button-modal:hover {
+  color: var(--fundo);
+  transform: scale(1.01) translateY(-5px);
+}
+
+.tabela-formacao, tr, td {
+  border: 1px solid var(--fundo);
+  border-collapse: collapse;
+}
+
+@media screen and (max-width: 800px) {
+  .container-sobre {
+    padding: 75px 10px;
+  }
+  .container-sobre #um-pouco {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-sobre #um-pouco p {
+    font-size: 20px;
+  }
+  .container-sobre #um-pouco img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style-sobre.css.map */

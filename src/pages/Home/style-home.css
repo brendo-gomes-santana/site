@@ -52,11 +52,11 @@
   border-radius: 12px;
   border-radius: 50% 100%;
   margin-right: 50px;
-  transition: 0.5s;
 }
 #eu img:hover {
-  border-left: 10px solid #2603c0;
-  border-right: 10px solid #2603c0;
+  transform: scale(1.01);
+  border-left: 3px solid #2603c0;
+  border-right: 3px solid #2603c0;
 }
 
 #servico {
@@ -120,13 +120,16 @@
   justify-content: center;
 }
 #ferramentas .box-img .img {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   border: 2px solid #2603c0;
   border-radius: 12px;
   width: 10%;
-  height: 50%;
   margin: 12px 12px;
   padding: 30px;
   align-items: center;
+  opacity: 1;
   transition: 0.5s;
 }
 #ferramentas .box-img .img img {
@@ -144,6 +147,7 @@
   align-items: center;
   flex-direction: row;
   margin-top: 50px;
+  z-index: -1;
 }
 #contato img {
   width: 50%;

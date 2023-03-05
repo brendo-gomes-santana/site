@@ -4,6 +4,7 @@
 .Aticarcor{
     background-color: var(--fundo);
     color:var(--letra-branca);
+
     a{
         color: var(--letra-branca);
         &:hover{
@@ -20,6 +21,8 @@ header{
     position: fixed;
     width: 100%;
     transition: 1s;
+    z-index: 10;
+
     img{
         width: 10%;
     }

@@ -3,6 +3,8 @@ import Modal from '../../componentes/Modal/index';
 
 import {useState} from 'react';
 
+import img_eu from './img/eu.jpg';
+
 export default function Sobre(){
     const [openModal, setOpenModal] = useState(false);
     const [openModa2, setOpenModa2] = useState(false);
@@ -14,9 +16,8 @@ export default function Sobre(){
     return(
         <main className="container-sobre">
             <h1>Sobre</h1>
-            <hr/>
             <article id='um-pouco'>
-                <img></img>
+                <img src={img_eu} alt='eu'/>
                 <p>
                     Olá, me chamo Brendo Gomes Santana, estou cursando na área da Ciência da computação, irei me formar em 2025.
                     <br/>
@@ -29,15 +30,15 @@ export default function Sobre(){
                 <h2>Formação</h2>
                 <hr/>
                 <div className='box-modal'>
-                    <button onClick={()=>{setOpenModal(true)}}>Informática Avançada Multimída</button>
-                    <button onClick={()=>{setOpenModa2(true)}}>Informática Avançada - Programador Web</button>
-                    <button onClick={()=>{setOpenModa3(true)}}>Informática básica e essencial</button>
-                    <button onClick={()=>{setOpenModa4(true)}}>Informática Técnico em manuteção de computadores</button>
-                    <button onClick={()=>{setOpenModa5(true)}}>Crie um site simples usando HTML, CSS e JAVASCRIPT</button>
-                    <button onClick={()=>{setOpenModa6(true)}}>Web Scraping com Python</button>
+                    <button onClick={()=>{setOpenModal(true)}} className='button-modal'>Informática Avançada Multimída</button>
+                    <button onClick={()=>{setOpenModa2(true)}} className='button-modal'>Informática Avançada - Programador Web</button>
+                    <button onClick={()=>{setOpenModa3(true)}} className='button-modal'>Informática básica e essencial</button>
+                    <button onClick={()=>{setOpenModa4(true)}} className='button-modal'>Informática Técnico em manuteção de computadores</button>
+                    <button onClick={()=>{setOpenModa5(true)}} className='button-modal'>Crie um site simples usando HTML, CSS e JAVASCRIPT</button>
+                    <button onClick={()=>{setOpenModa6(true)}} className='button-modal'>Web Scraping com Python</button>
                     <Modal isOpen={openModal} setModalOpen={()=> setOpenModal(!openModal)}>
                         <p>HISTÓRIO DO CURSO</p>
-                        <table border='1'>
+                        <table className='tabela-formacao'>
                             <tr>
                                 <td>MÓDULO</td>
                                 <td>RESUMO DO CONTEÚDO APRENDIZAGEM</td>
@@ -73,7 +74,7 @@ export default function Sobre(){
                     </Modal>
                     <Modal isOpen={openModa2} setModalOpen={()=> setOpenModa2(!openModa2)}>
                         <p>HISTÓRICO DE CURSO</p>
-                        <table border='1'>
+                        <table className='tabela-formacao'>
                             <tr>
                                 <td>MÓDULO</td>
                                 <td>RESUMO DO CONTEÚDO APRENDIZAGEM</td>
@@ -118,7 +119,7 @@ export default function Sobre(){
                     </Modal>
                     <Modal isOpen={openModa3} setModalOpen={()=> setOpenModa3(!openModa3)}>
                         <p>HISTÓRICO DO CURSO</p>
-                        <table border='1'>
+                        <table className='tabela-formacao'>
                             <tr>
                                 <td>MÓDULO</td>
                                 <td>RESUMO DO CONTEÚDO APRENDIZAGEM</td>
@@ -178,7 +179,7 @@ export default function Sobre(){
                     </Modal>
                     <Modal isOpen={openModa4} setModalOpen={()=> setOpenModa4(!openModa4)}>
                         <p>HISTÓRICO DE CURSO</p>
-                        <table border='1'>
+                        <table className='tabela-formacao'>
                             <tr>
                                 <td>MÓDULO</td>
                                 <td>RESUMO DO CONTEÚDO APRENDIZAGEM</td>

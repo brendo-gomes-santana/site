@@ -20,7 +20,6 @@ export default function Header({acao}){
                 <Link to='/'>Home</Link>
                 <Link to='/sobre'>Sobre</Link>
                 <a target='_blank' href="https://github.com/brendo-gomes-santana">Meus Projetos</a>
-                <a href="#contato">Contato</a>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes/>
                 </button>
