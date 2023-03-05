@@ -1,9 +1,14 @@
 import './style-sobre.css';
 import Modal from '../../componentes/Modal/index';
 
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 import img_eu from './img/eu.jpg';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import cv from './Curriculo.pdf';
 
 export default function Sobre(){
     const [openModal, setOpenModal] = useState(false);
@@ -13,10 +18,14 @@ export default function Sobre(){
     const [openModa5, setOpenModa5] = useState(false);
     const [openModa6, setOpenModa6] = useState(false);
 
+    useEffect(()=>{
+        AOS.init({duration: 1000});
+    },[])
+
     return(
-        <main className="container-sobre">
+        <main className="container-sobre" >
             <h1>Sobre</h1>
-            <article id='um-pouco'>
+            <article id='um-pouco' data-aos='fade-up'>
                 <img src={img_eu} alt='eu'/>
                 <p>
                     Olá, me chamo Brendo Gomes Santana, estou cursando na área da Ciência da computação, irei me formar em 2025.
@@ -26,7 +35,10 @@ export default function Sobre(){
                     Comecei a me focar no desenvolvendo web, meu objetivo é ser dev fullstatek, mas pra isso acontecer ainda há uma grande jornada pela frente, começando pelo front-end e depois indo pro back-end.
                 </p>
             </article>
-            <article id='cursos-feitos'>
+            <article id='meu-cv'>
+                <a href={cv} download >Meu CV</a>
+            </article>
+            <article id='cursos-feitos' >
                 <h2>Formação</h2>
                 <hr/>
                 <div className='box-modal'>

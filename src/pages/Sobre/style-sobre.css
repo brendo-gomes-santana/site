@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 .container-sobre {
   padding-top: 6rem;
   padding-left: 4rem;
@@ -11,11 +12,30 @@
   margin-bottom: 2rem;
 }
 .container-sobre #um-pouco p {
+  font-family: "Satisfy", cursive;
   font-size: 30px;
   padding: 20px;
 }
 .container-sobre #um-pouco img {
   width: 20%;
+  border-radius: 12px;
+}
+.container-sobre #meu-cv {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.container-sobre #meu-cv a {
+  text-decoration: none;
+  margin-bottom: 2rem;
+  text-align: center;
+  align-items: center;
+  background-color: var(--fundo);
+  color: var(--letra-branca);
+  width: 10rem;
+  padding: 12px;
   border-radius: 12px;
 }
 .container-sobre #cursos-feitos {
