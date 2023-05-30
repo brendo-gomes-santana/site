@@ -17,9 +17,9 @@ export default function Header({acao}){
         <header className={acao ? 'Aticarcor' : ''}>
             <img src={logo} alt='brendo gomes'/>
             <nav ref={navRef}>
-                <Link to='/'>Home</Link>
-                <Link to='/sobre'>Sobre</Link>
-                <a target='_blank' href="https://github.com/brendo-gomes-santana">Meus Projetos</a>
+                <Link to='/' onClick={showNavbar}>Home</Link>
+                <Link to='/sobre' onClick={showNavbar}>Sobre</Link>
+                <a target='blank' href="https://github.com/brendo-gomes-santana">Meus Projetos</a>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes/>
                 </button>

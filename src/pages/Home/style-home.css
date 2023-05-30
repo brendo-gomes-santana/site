@@ -59,49 +59,6 @@
   border-right: 3px solid #2603c0;
 }
 
-#servico {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-#servico h2 {
-  font-size: 45px;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #2603c0;
-}
-#servico .container-servico {
-  display: flex;
-  justify-content: center;
-}
-#servico .container-servico .box {
-  width: 75%;
-  margin: 0 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.2980392157);
-  border-radius: 12px;
-  transition: 0.5s;
-}
-#servico .container-servico .box .titulo {
-  margin: 12px;
-  font-size: 30px;
-  color: #2603c0;
-}
-#servico .container-servico .box img {
-  width: 20%;
-}
-#servico .container-servico .box .conteudo {
-  font-size: 20px;
-  margin: 15px;
-  text-align: center;
-}
-#servico .container-servico .box:hover {
-  transform: scale(1.01) translateY(-5px);
-  border-top: 5px solid #2603c0;
-}
-
 #ferramentas {
   width: 100%;
   display: flex;
@@ -113,31 +70,36 @@
   text-align: center;
   color: #2603c0;
 }
-#ferramentas .box-img {
+#ferramentas #box-img {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
-#ferramentas .box-img .img {
+
+.modelboxtecnologia {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  border: 2px solid #2603c0;
-  border-radius: 12px;
-  width: 10%;
-  margin: 12px 12px;
-  padding: 30px;
   align-items: center;
-  opacity: 1;
-  transition: 0.5s;
+  width: 100px;
+  margin: 1rem;
 }
-#ferramentas .box-img .img img {
-  width: 5rem;
+.modelboxtecnologia button {
+  max-width: 100px;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
-#ferramentas .box-img .img:hover {
-  transform: scale(1.01) translateY(-5px);
-  border-top: 5px solid #2603c0;
+.modelboxtecnologia .tecnologialist {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.modelboxtecnologia .tecnologialist span {
+  margin-bottom: 0.5rem;
 }
 
 #contato {
