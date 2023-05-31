@@ -21,7 +21,6 @@
   border-radius: 12px;
 }
 #container-sobre #meu-cv {
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +28,6 @@
 }
 #container-sobre #meu-cv a {
   text-decoration: none;
-  margin-bottom: 2rem;
   text-align: center;
   align-items: center;
   background-color: var(--fundo);
@@ -37,40 +35,6 @@
   width: 10rem;
   padding: 12px;
   border-radius: 12px;
-}
-#container-sobre #cursos-feitos {
-  background-color: var(--fundo);
-  width: 100%;
-  border-radius: 12px;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#container-sobre #cursos-feitos h2 {
-  font-size: 30px;
-  color: var(--letra-branca);
-}
-#container-sobre #cursos-feitos .box-modal {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100%;
-}
-#container-sobre #cursos-feitos .box-modal .button-modal {
-  height: 50px;
-  width: 15rem;
-  margin: 3px;
-  background-color: var(--letra-branca);
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  transition: 0.5s;
-}
-#container-sobre #cursos-feitos .box-modal .button-modal:hover {
-  color: var(--fundo);
-  transform: scale(1.01) translateY(-5px);
 }
 
 .tabela-formacao, tr, td {

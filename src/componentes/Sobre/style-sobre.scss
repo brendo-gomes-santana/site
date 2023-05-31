@@ -24,14 +24,12 @@
         }
     }
     #meu-cv{
-        margin-bottom: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         a{
             text-decoration: none;
-            margin-bottom: 2rem;
             text-align: center;
             align-items: center;
             background-color: var(--fundo);
@@ -39,48 +37,6 @@
             width: 10rem;
             padding: 12px;
             border-radius: 12px;
-        }
-    }
-
-    #cursos-feitos{
-        background-color: var(--fundo);
-        width: 100%;
-        border-radius: 12px;
-        padding: 12px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h2{
-            font-size: 30px;
-            color: var(--letra-branca);
-        }
-
-        .box-modal{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            height: 100%;
-
-
-
-            .button-modal{
-                height: 50px;
-                width: 15rem;
-                margin: 3px;
-
-                background-color: var(--letra-branca);
-                border-radius: 12px;
-                border: none;
-                cursor: pointer;
-                transition: 0.5s;
-
-                &:hover{
-                    color: var(--fundo);
-                    transform: scale(1.01) translateY(-5px);
-                }
-            }
         }
     }
 }
