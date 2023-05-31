@@ -3,12 +3,10 @@ import {useEffect, useState} from 'react';
 
 
 import Header from './componentes/Header/index';
-
-    import Home from './pages/Home/index';
-    import Sobre from './pages/Sobre/index'
-
+import Home from './pages/Home/index';
 import Footer from './componentes/Footer/index'
 
+import Error from './pages/Error';
 
 function Router(){
     const [ativarcor, setAtivarCor] = useState(false);
@@ -30,7 +28,7 @@ function Router(){
 
             <Routes>
                 <Route path='/' element={ <Home/> }/>
-                <Route path='/Sobre' element={ <Sobre/> }/>
+                <Route path='*' element={ <Error/> }/>
             </Routes>
 
             <Footer/>

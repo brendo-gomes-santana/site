@@ -18,7 +18,8 @@ export default function Header({acao}){
             <img src={logo} alt='brendo gomes'/>
             <nav ref={navRef}>
                 <Link to='/' onClick={showNavbar}>Home</Link>
-                <Link to='/sobre' onClick={showNavbar}>Sobre</Link>
+                <a onClick={showNavbar} href='#container-sobre'>Sobre</a>
+                <a onClick={showNavbar} href='#contato'>Contato</a>
                 <a target='blank' href="https://github.com/brendo-gomes-santana">Meus Projetos</a>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes/>

@@ -17,7 +17,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 import Arraytecnologia  from '../../componentes/Array/arrayTecnologia'
-
+import Sobre from '../../componentes/Sobre';
+import ButtonTop from '../../componentes/ButtonTop';
 export default function Home(){
 
     const [qualTecnologia, setQualTecnologia] = useState(null)
@@ -62,14 +63,14 @@ export default function Home(){
 
     return(
         <main className='container'>
-            <article id='eu' data-aos='fade-up'>
+            <article id='eu'>
                 <section>
-                    <h3>Web</h3>
-                    <h1>Desenvolvedor</h1>
-                    <p>Sou Desenvolvedor focado no desenvolvimento Web. Acredito no poder <br/>da tecnologia de transformar o mundo.</p>
-                    <Link to='/sobre'>Mais</Link>
+                    <h3 data-aos-delay="200" data-aos='fade-left'>Web</h3>
+                    <h1 data-aos-delay="400" data-aos='fade-left'>Desenvolvedor</h1>
+                    <p data-aos-delay="600" data-aos='fade-left'>Sou Desenvolvedor focado no desenvolvimento Web. Acredito no poder <br/>da tecnologia de transformar o mundo.</p>
+                    <Link to='/sobre' data-aos-delay="700" data-aos='fade-left'>Mais</Link>
                 </section>
-                <img src={img_eu} alt='brendo Gomes Santana'/>
+                <img src={img_eu} alt='brendo Gomes Santana' data-aos-delay="900" data-aos='fade-right'/>
             </article>
 
             <article id='ferramentas' data-aos='fade-up'>
@@ -118,8 +119,8 @@ export default function Home(){
                     </div>
 
                     <div className='modelboxtecnologia'>
-                    {qualTecnologia === 3 ? <button onClick={()=> setQualTecnologia(null)}>Data Base</button> : 
-                        <button onClick={()=> setQualTecnologia(3)}>Data Base</button>}
+                    {qualTecnologia === 3 ? <button onClick={()=> setQualTecnologia(null)}>DataBase</button> : 
+                        <button onClick={()=> setQualTecnologia(3)}>DataBase</button>}
                     {qualTecnologia === 3 && (
                             <>
                             <div className='tecnologialist'>
@@ -139,7 +140,7 @@ export default function Home(){
                     </div>
                 </section>
             </article>
-
+            <Sobre/>
             <article id='contato' >
                 <img src={img_contato} alt='contato'data-aos='fade-right'/>
                 <form className='form' onSubmit={sendEmail} data-aos='fade-left' >
@@ -170,6 +171,7 @@ export default function Home(){
                     <input className='Enviar' type='submit' value='Enviar'/>
                 </form>
             </article>
+            <ButtonTop/>
         </main>
     );
 }

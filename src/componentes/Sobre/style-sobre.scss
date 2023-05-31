@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-.container-sobre{
+#container-sobre{
     padding-top: 6rem;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -92,7 +92,7 @@
 
 
 @media screen and (max-width:800px){
-    .container-sobre{
+    #container-sobre{
         padding: 75px 10px;
         #um-pouco{
             flex-direction: column;
