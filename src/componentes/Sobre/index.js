@@ -10,10 +10,10 @@ export default function Sobre(){
     },[])
     return(
         <section id="container-sobre" >
-            <h1 data-aos='fade-right'>Sobre</h1>
+            <h1 data-aos='fade-up'>Sobre</h1>
             <article id='um-pouco'>
-                <img src={require('./img/eu.jpg')} alt='eu' data-aos='fade-right'/>
-                <p data-aos='fade-left'>
+                <img src={require('./img/eu.jpg')} alt='eu' data-aos='fade-up'/>
+                <p data-aos='fade-up'>
                     Olá, me chamo Brendo Gomes Santana, estou cursando na área da Ciência da computação, irei me formar em 2025.
                     <br/>
                     Sempre me interessei pela área da tecnologia, aos 15 anos já tinha bastante conhecimento na área, mas não sabia muito o que realmente gostaria de fazer, só quando entrei na faculdade que percebi que gostava de programar. 

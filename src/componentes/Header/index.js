@@ -17,7 +17,7 @@ export default function Header({acao}){
         <header className={acao ? 'Aticarcor' : ''}>
             <img src={logo} alt='brendo gomes'/>
             <nav ref={navRef}>
-                <Link to='/' onClick={showNavbar}>Home</Link>
+                <a href='#eu' onClick={showNavbar}>Home</a>
                 <a onClick={showNavbar} href='#container-sobre'>Sobre</a>
                 <a onClick={showNavbar} href='#contato'>Contato</a>
                 <a target='blank' href="https://github.com/brendo-gomes-santana">Meus Projetos</a>

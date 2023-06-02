@@ -18,7 +18,7 @@ import 'aos/dist/aos.css'
 
 import Arraytecnologia  from '../../componentes/Array/arrayTecnologia'
 import Sobre from '../../componentes/Sobre';
-import ButtonTop from '../../componentes/ButtonTop';
+
 export default function Home(){
 
     const [qualTecnologia, setQualTecnologia] = useState(null)
@@ -65,12 +65,12 @@ export default function Home(){
         <main className='container'>
             <article id='eu'>
                 <section>
-                    <h3 data-aos-delay="200" data-aos='fade-left'>Web</h3>
-                    <h1 data-aos-delay="400" data-aos='fade-left'>Desenvolvedor</h1>
-                    <p data-aos-delay="600" data-aos='fade-left'>Sou Desenvolvedor focado no desenvolvimento Web. Acredito no poder <br/>da tecnologia de transformar o mundo.</p>
-                    <Link to='/sobre' data-aos-delay="700" data-aos='fade-left'>Mais</Link>
+                    <h3 data-aos-delay="200" data-aos='fade-up'>Web</h3>
+                    <h1 data-aos-delay="400" data-aos='fade-up'>Desenvolvedor</h1>
+                    <p data-aos-delay="600" data-aos='fade-up'>Sou Desenvolvedor focado no desenvolvimento Web. Acredito no poder <br/>da tecnologia de transformar o mundo.</p>
+                    <a href='#container-sobre' data-aos-delay="700" data-aos='fade-up'>Mais</a>
                 </section>
-                <img src={img_eu} alt='brendo Gomes Santana' data-aos-delay="900" data-aos='fade-right'/>
+                <img src={img_eu} alt='brendo Gomes Santana' data-aos-delay="900" data-aos='fade-up'/>
             </article>
 
             <article id='ferramentas' data-aos='fade-up'>
@@ -142,8 +142,8 @@ export default function Home(){
             </article>
             <Sobre/>
             <article id='contato' >
-                <img src={img_contato} alt='contato'data-aos='fade-right'/>
-                <form className='form' onSubmit={sendEmail} data-aos='fade-left' >
+                <img src={img_contato} alt='contato'data-aos='fade-up'/>
+                <form className='form' onSubmit={sendEmail} data-aos='fade-up' >
                 <p>Entre em Contato</p>
                     <label>Nome</label>
                     <input type='text' 
@@ -171,7 +171,6 @@ export default function Home(){
                     <input className='Enviar' type='submit' value='Enviar'/>
                 </form>
             </article>
-            <ButtonTop/>
         </main>
     );
 }
